@@ -1,0 +1,95 @@
+/* ===============================
+   COUPLE FULLSCREEN CINEMATIC
+================================ */
+
+.couple-section {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+  text-align: center;
+}
+
+/* Background slider */
+.couple-slider {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+
+.couple-slide {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transform: scale(1);
+  transition: opacity 1.8s ease-in-out, transform 6s ease-in-out;
+}
+
+.couple-slide.active {
+  opacity: 1;
+  transform: scale(1.05);
+}
+
+/* Overlay */
+.couple-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  background: linear-gradient(
+    to bottom,
+    rgba(0,0,0,0.2),
+    rgba(0,0,0,0.4),
+    rgba(0,0,0,0.7)
+  );
+}
+
+/* Content */
+.couple-content {
+  position: relative;
+  z-index: 3;
+  padding: 20px;
+}
+
+.couple-content .subtitle {
+  font-size: 12px;
+  letter-spacing: 3px;
+  margin-bottom: 14px;
+  opacity: 0.9;
+}
+
+.couple-name-script {
+  font-family: var(--font-heading);
+  font-size: 46px;
+  line-height: 1.2;
+}
+
+/* Countdown */
+.couple-countdown {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+}
+
+.time-box {
+  text-align: center;
+}
+
+.time-box span {
+  display: block;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.time-box small {
+  font-size: 10px;
+  letter-spacing: 2px;
+  opacity: 0.7;
+}

@@ -29,10 +29,17 @@ document.addEventListener("DOMContentLoaded", async function () {
   // Load components
   await loadComponent("cover", "components/cover.html");
   await loadComponent("couple", "components/couple.html");
-  await loadComponent("countdown", "components/countdown.html");
   await loadComponent("gallery", "components/gallery.html");
   await loadComponent("event", "components/event.html");
   await loadComponent("footer", "components/footer.html");
+
+  if (typeof initCoupleSlider === "function") {
+    initCoupleSlider();
+  }
+
+  if (typeof initCountdown === "function") {
+    initCountdown();
+  }
 
   // Ambil element setelah load
   const openBtn = document.getElementById("openInvitation");
