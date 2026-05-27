@@ -1,0 +1,10 @@
+:root {
+  --primary: #B7A38A;      /* Beige */
+  --dark: #2F2F2F;         /* Background luar */
+  --cream: #F4F1EC;        /* Section terang */
+  --text-dark: #4A3F35;
+  --white: #FFFFFF;
+
+  --font-heading: 'Great Vibes', cursive;
+  --font-body: 'Poppins', sans-serif;
+}

@@ -1,0 +1,60 @@
+/* Reset dasar */
+
+#app {
+  position: relative; /* TAMBAHKAN INI */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--dark);
+  font-family: var(--font-body);
+}
+
+/* Frame Mobile Only */
+#app {
+  max-width: 430px;
+  margin: auto;
+  background: var(--white);
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+/* Section default */
+section {
+  padding: 60px 20px;
+}
+
+.container {
+  width: 100%;
+  max-width: 100%;
+}
+
+body.locked {
+  overflow: hidden;
+}
+
+.music-toggle {
+  position: absolute; /* ganti dari fixed */
+  bottom: 20px;
+  right: 20px;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  border: none;
+  background: var(--primary);
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  z-index: 999;
+  display: none;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.music-toggle.active {
+  display: block;
+}

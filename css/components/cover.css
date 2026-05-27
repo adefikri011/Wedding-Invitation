@@ -1,0 +1,64 @@
+.cover-section {
+  position: relative;
+  height: 100vh;
+  background: url("../../assets/images/cover.jpg") center/cover no-repeat;
+  display: flex;
+  align-items: center;   /* balik ke tengah */
+  justify-content: center;
+  text-align: center;
+  color: var(--white);
+}
+
+.cover-section .overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(0,0,0,0.7),
+    rgba(0,0,0,0.4),
+    rgba(0,0,0,0.2)
+  );
+}
+
+.cover-content {
+  position: relative;
+  z-index: 2;
+  padding: 20px;
+  transform: translateY(10%);
+}
+
+.subtitle {
+  font-size: 12px;
+  letter-spacing: 3px;
+  margin-bottom: 12px;
+  opacity: 0.8;
+}
+
+.couple-name {
+  font-family: var(--font-heading);
+  font-size: 42px;
+  margin-bottom: 15px;
+}
+
+.date {
+  font-size: 14px;
+  margin-bottom: 35px;
+  letter-spacing: 1px;
+}
+
+.open-btn {
+  background: var(--primary);
+  border: none;
+  padding: 14px 32px;
+  border-radius: 30px;
+  color: var(--white);
+  font-size: 14px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.open-btn:hover {
+  transform: translateY(-3px);
+  opacity: 0.9;
+}
